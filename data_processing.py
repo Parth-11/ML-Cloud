@@ -8,8 +8,8 @@ df.drop(['failed'],inplace=True,axis=1)
 
 X_train,X_test,y_train,y_test = train_test_split(df,failed,train_size=0.2,random_state=32)
 
-def get_traning_data():
+def get_traning_data() ->tuple[pd.DataFrame,pd.Series]:
     return (X_train,y_train)
 
-def get_validation_data():
+def get_validation_data() ->tuple[pd.DataFrame,pd.Series]:
     return (X_test,y_test)
