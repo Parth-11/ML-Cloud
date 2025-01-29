@@ -6,7 +6,7 @@ class Classifier(nn.Module):
     def __init__(self,input_size :int):
         super().__init__()
 
-        self.fc1 = nn.Linear(input_size,64)
+        self.fc1 = nn.Linear(15,64)
         self.fc2 = nn.Linear(64,100)
         self.fc3 = nn.Linear(100,150)
         self.output = nn.Linear(150,2)
