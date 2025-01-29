@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 class Classifier(nn.Module):
-    def __init__(self,input_size :int):
+    def __init__(self):
         super().__init__()
 
         self.fc1 = nn.Linear(15,64)
