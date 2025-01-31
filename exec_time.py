@@ -19,8 +19,6 @@ scaler = MinMaxScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.fit(X_test)
 
-print(type(X_train),type(y_train))
-
 def train_data() -> tuple[np.ndarray,np.ndarray]:
     return (X_train,y_train)
 
